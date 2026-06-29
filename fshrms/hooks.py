@@ -23,8 +23,9 @@ app_license = "mit"
 
 fixtures = [
     {"dt": "Custom Field", "filters": [["dt", "in", ["Coupon Code"]]]},
-    {"dt": "Property Setter", "filters": [["doc_type", "in", ["Customer", "Coupon Code"]]]},
+    {"dt": "Property Setter", "filters": [["doc_type", "in", ["Coupon Code"]]]},
 ]
+
 # Incl`udes in <head>
 # ------------------
 
