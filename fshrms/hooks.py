@@ -21,7 +21,18 @@ app_license = "mit"
 # 	}
 # ]
 
-# Includes in <head>
+fixtures=[
+    {
+        "dt":"Coupon Code",
+        "filters":[
+            {
+                "fieldname":"custom_company"
+            }
+        ]
+    }
+]
+
+# Incl`udes in <head>
 # ------------------
 
 # include js, css files in header of desk.html
