@@ -11,15 +11,16 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "fshrms",
-# 		"logo": "/assets/fshrms/logo.png",
-# 		"title": "Fshrms",
-# 		"route": "/fshrms",
-# 		"has_permission": "fshrms.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "fshrms",
+		"logo": "/assets/fshrms/logo.png",
+		"title": "Fshrms",
+         "route": "/insights",
+		# "route": "/fshrms",
+		# "has_permission": "fshrms.api.permission.has_app_permission"
+	}
+]
 
 fixtures = [
     {"dt": "Custom Field", "filters": [["dt", "in", ["Coupon Code"]]]},
@@ -150,6 +151,12 @@ fixtures = [
 # 		"on_trash": "method"
 # 	}
 # }
+
+doc_events = {
+    "Salary Slip": {
+        "before_validate": "fshrms.overrides.payroll.calculate_fdre_income_tax"
+    }
+}
 
 # Scheduled Tasks
 # ---------------

@@ -1,0 +1,29 @@
+{
+ "app": "fshrms",
+ "creation": "2026-07-02 07:21:17.281994",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "header_icon": "up",
+ "idx": 0,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "mark-as-read",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "My Todo",
+   "link_to": "My Todo",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-07-02 07:27:40.721044",
+ "modified_by": "Administrator",
+ "module": "Projects",
+ "name": "Sidebar 1",
+ "owner": "Administrator",
+ "standard": 1,
+ "title": "Sidebar 1"
+}

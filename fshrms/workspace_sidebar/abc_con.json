@@ -1,0 +1,27 @@
+{
+ "app": "fshrms",
+ "creation": "2026-07-02 07:33:46.588882",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "idx": 0,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Link 1",
+   "link_to": "WS 1",
+   "link_type": "Workspace",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-07-02 07:35:24.344207",
+ "modified_by": "Administrator",
+ "module": "Fshrms",
+ "name": "Abc Con",
+ "owner": "Administrator",
+ "standard": 1,
+ "title": "Abc Con"
+}

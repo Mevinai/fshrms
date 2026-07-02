@@ -1,0 +1,28 @@
+{
+ "app": "fshrms",
+ "creation": "2026-07-01 18:50:49.732707",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "header_icon": "align-center-vertical",
+ "idx": 1,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Example",
+   "link_to": "Build",
+   "link_type": "Workspace",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-07-01 20:24:52.107482",
+ "modified_by": "Administrator",
+ "module": "Fshrms",
+ "name": "Example",
+ "owner": "Administrator",
+ "standard": 1,
+ "title": "Example"
+}

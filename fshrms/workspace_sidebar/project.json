@@ -1,0 +1,28 @@
+{
+ "app": "fshrms",
+ "creation": "2026-07-02 06:52:59.689272",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "header_icon": "folder-normal",
+ "idx": 0,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Project",
+   "link_to": "Project",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-07-02 06:53:26.483959",
+ "modified_by": "Administrator",
+ "module": "Projects",
+ "name": "Project",
+ "owner": "Administrator",
+ "standard": 1,
+ "title": "Project"
+}
