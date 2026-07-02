@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Coupon Code",
+  "enabled": 1,
+  "modified": "2026-06-29 17:39:30.706462",
+  "module": null,
+  "name": "Employee Script",
+  "script": "frappe.ui.form.on('Coupon Code', {\n\n    setup(frm) {\n\n        frm.set_query('custom_employee', function() {\n\n            return {\n                filters: {\n                    department: frm.doc.custom_department\n                }\n            };\n\n        });\n\n    },\n\n    custom_department: function(frm) {\n        // reset employee when department changes\n        frm.set_value('custom_employee', null);\n    }\n\n});",
+  "view": "Form"
+ }
+]

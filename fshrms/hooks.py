@@ -22,8 +22,42 @@ app_license = "mit"
 # ]
 
 fixtures = [
-    {"dt": "Custom Field", "filters": [["dt", "in", ["Coupon Code"]]]},
-    {"dt": "Property Setter", "filters": [["doc_type", "in", ["Coupon Code"]]]},
+    {
+        "dt": "Custom Field", 
+        "filters": [
+            ["dt", "=", "Coupon Code"]
+            ]
+     },
+    {
+        "dt": "Property Setter", 
+        "filters": [
+            ["doc_type", "=", "Coupon Code"]
+            ]
+    },
+    {
+        "dt": "Workflow",
+        "filters": [
+            ["name","=", "Expense Approval 2"]
+            ]
+    },
+    {
+        "dt": "Client Script",
+        "filters": [
+            ["name","=","Employee Script"]
+        ]
+    },
+    {
+        "dt": "Workflow State",
+        "filters": [
+            ["name","in",["Pending Finance Approval,Pending Manager Approval,Approved,Rejected"]]
+        ]
+    },
+    {
+        "dt": "Role",
+        "filters": [
+            ["name","in",["Finance Officer,Department Head"]]
+        ]
+    }
 ]
 
 # Incl`udes in <head>
