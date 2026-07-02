@@ -36,22 +36,25 @@ fixtures = [
     },
     {
         "dt": "Workflow",
-        "filters": [
-            ["name","=", "Expense Approval 2"]
-            ]
     },
+    # {
+    #     "dt": "Workflow",
+    #     "filters": [
+    #         ["name","=", "Expense Approval 2"]
+    #         ]
+    # },
     {
         "dt": "Client Script",
         "filters": [
             ["name","=","Employee Script"]
         ]
     },
-    {
-        "dt": "Workflow State",
-        "filters": [
-            ["name","in",["Pending Finance Approval,Pending Manager Approval,Approved,Rejected"]]
-        ]
-    },
+    # {
+    #     "dt": "Workflow State",
+    #     "filters": [
+    #         ["name","in",["Pending Finance Approval,Pending Manager Approval,Approved,Rejected"]]
+    #     ]
+    # },
     {
         "dt": "Role",
         "filters": [
