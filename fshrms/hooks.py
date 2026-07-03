@@ -154,9 +154,10 @@ fixtures = [
 
 doc_events = {
     "Salary Slip": {
-        "before_validate": "fshrms.overrides.payroll.calculate_fdre_income_tax"
+        "validate": "fshrms.overrides.salary_slip.fdre_salary_calculation"
     }
 }
+
 
 # Scheduled Tasks
 # ---------------

@@ -2,14 +2,23 @@
  "actions": [],
  "allow_bulk_edit": 1,
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2026-07-01 18:43:47.392248",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "section_break_we9n",
-  "amended_from",
-  "name1",
-  "description"
+  "purchase_invoice",
+  "column_break_pcfy",
+  "title",
+  "section_break_purt",
+  "customer_name",
+  "section_break_lcnr",
+  "description",
+  "section_break_your",
+  "items",
+  "amended_from"
  ],
  "fields": [
   {
@@ -27,24 +36,64 @@
    "search_index": 1
   },
   {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "label": "Name"
-  },
-  {
    "fieldname": "description",
    "fieldtype": "Small Text",
    "label": "Description"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "My Todo Items"
+  },
+  {
+   "fieldname": "purchase_invoice",
+   "fieldtype": "Link",
+   "label": "Purchase Invoice",
+   "options": "Purchase Invoice"
+  },
+  {
+   "fieldname": "column_break_pcfy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_lcnr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_your",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_purt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "WR-.YYYY.-"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-07-02 11:43:09.678468",
+ "modified": "2026-07-03 12:56:39.673712",
  "modified_by": "Administrator",
  "module": "Fshrms",
  "name": "My Todo",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
