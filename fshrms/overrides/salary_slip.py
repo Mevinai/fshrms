@@ -27,10 +27,6 @@ def fdre_salary_calculation(doc,method=None):
         })
 
 
-    
-
-    # frappe.throw(f"{doc.as_dict()}")
-
 
 
 

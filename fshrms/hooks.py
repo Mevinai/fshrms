@@ -22,10 +22,11 @@ add_to_apps_screen = [
 	}
 ]
 
-fixtures = [
-    {"dt": "Custom Field", "filters": [["dt", "in", ["Coupon Code"]]]},
-    {"dt": "Property Setter", "filters": [["doc_type", "in", ["Coupon Code"]]]},
-]
+# fixtures = [
+#     {"dt": "Custom Field", "filters": [["dt", "in", ["Coupon Code"]]]},
+#     {"dt": "Property Setter", "filters": [["doc_type", "in", ["Coupon Code"]]]},
+# ]
+
 
 # Incl`udes in <head>
 # ------------------
