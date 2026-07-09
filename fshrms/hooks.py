@@ -95,6 +95,10 @@ add_to_apps_screen = [
 # before_install = "fshrms.install.before_install"
 # after_install = "fshrms.install.after_install"
 
+after_install = ["fshrms.overrides.tax.accounts.setupTaxAccounts"]
+
+after_migrate = ["fshrms.overrides.tax.accounts.setupTaxAccounts"]
+
 # Uninstallation
 # ------------
 
@@ -158,6 +162,13 @@ doc_events = {
         "validate": "fshrms.overrides.salary_slip.fdre_salary_calculation"
     }
 }
+
+# FDRE Ethiopia income tax override
+# --------------------------------
+# Apply the monkey patch that replaces Frappe HR's default income tax slab
+# calculation with the dynamic FDRE Income Tax Slab logic. This runs at app
+# import time (i.e. on every `bench restart`), so the override is always
+# active without touching the standard payroll workflow.
 
 
 # Scheduled Tasks

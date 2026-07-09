@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2026-07-09 07:31:31.898971",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2026-07-09 07:58:44.697433",
+ "modified_by": "Administrator",
+ "module": "Fshrms",
+ "name": "my-todo-page",
+ "owner": "Administrator",
+ "page_name": "my-todo-page",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": ""
+}
