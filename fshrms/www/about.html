@@ -1,0 +1,42 @@
+{% include "templates/includes/layout.html" %}
+
+{% block content %}
+
+<section class="flex items-center w-full bg-gray-900">
+    <div class="w-[90%] md:max-w-7xl mx-auto py-10 md:py-16">
+        <div class="md:flex items-center md:space-x-10">
+            <div class="w-full md:w-1/2">
+                <div class="pt-2 md:pt-6">
+                    <h1
+                        class="text-4xl md:text-[56px] tracking-[.5px] font-bold text-gray-100 leading-tight md:leading-[1.2]">
+                        Who we are</h1>
+                </div>
+                <div class="">
+                    <p class="text-gray-300 text-base md:text-[16px] tracking-[.1px] mt-4 leading-relaxed">Mevinai is a
+                        <span class="text-amber-600 font-semibold">Tech Startup</span> established as a private limited
+                        company in accordance with the Commercial Code of the Federal Democratic Republic of Ethiopia,
+                        Proclamation No. 1243/2021. Led by a team of engineers and industry experts, Mevinai is
+                        dedicated to delivering simple, affordable, and reliable software solutions that empower
+                        businesses to optimize their operations and unlock new growth opportunities.</p>
+                </div>
+                <div class="py-4 flex space-x-4"><a
+                        class="rounded-xl inline-flex items-center justify-center font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 bg-blue-600 text-white hover:bg-amber-700 focus:ring-amber-700 h-12 px-5 text-sm md:text-[16px] font-[500]"
+                        href="/contact">Meet the team</a><a
+                        class="rounded-xl inline-flex items-center justify-center font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border border-gray-200 hover:bg-gray-50 hover:border-gray-200 text-amber-600 hover:text-amber-900 h-12 px-5 text-sm md:text-[16px] font-[500]"
+                        href="/login">Get started</a></div>
+            </div>
+            <div class="hidden md:block w-full md:w-1/2 h-full md:p-3 bg-gray-100 border border-gray-200 rounded-xl">
+                <div
+                    class="w-full h-full md:p-10 bg-white border border-gray-200 flex items-center justify-center rounded-xl">
+                    <a class="flex space-x-1 items-center cursor-pointer" href="/"><img alt="Mevinai" loading="lazy"
+                            width="600" height="600" decoding="async" data-nimg="1"
+                            class="sm:w-auto object-contain rounded size-12 md:size-64"
+                            srcset="/_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 2x"
+                            src="/_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75" style="color: transparent;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

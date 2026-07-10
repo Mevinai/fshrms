@@ -1,0 +1,55 @@
+{% include "templates/includes/layout.html" %}
+
+{% block content %}
+
+<div class="bg-gray-900">
+    <section class="py-16">
+      <!-- hero section -->
+       <div class="w-[95%] md:max-w-[85%] mx-auto">
+       <div class="md:flex items-center justify-between space-x-10">
+         <div class="w-full md:w-1/2">
+           <h1 class="text-white text-3xl md:text-5xl font-bold">
+            We have a great software as a service to empower your business.
+        </h1>
+        <p class="text-gray-300 text-base py-2">
+            Powering you with ERP-Xpertise,saving lives even better. Adding ERP-Xpertise,helping you help better. Adding ERP-Xpertise to you,recovering health even better.
+        </p>
+        <div class="py-6">
+            <a href="/login" class="inline-flex items-center justify-center rounded-md bg-blue-600 px-8 py-3 text-sm font-medium text-white hover:bg-indigo-700">
+                Get Started
+            </a>
+        </div>
+        </div>
+        <div class="w-full md:w-1/2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzGRXY9_ENV-SMzi97Tx2oyjASyeUfqPMrHzW-RJqW-bvPbMw9fuef1c0&s=10"
+             alt=""
+             class="w-full h-full object-cover rounded-xl "
+             >
+        </div>
+       </div>
+       </div>
+    </section>
+
+    <section>
+        <div class="w-[95%] md:max-w-[85%] mx-auto py-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                {% for item in items %}
+                <div class="rounded-lg bg-white shadow-sm">
+                    <div>
+                        <img src="{{ item.image or 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTvcOc44ilN8bVKa3pzf0vplfjJCP_XhH-27ScDUox2Q&s=10' }}" alt="{{ item.item_name }}"
+                        class="w-full h-[150px] rounded-t-lg"
+                        >
+                    </div>
+                    <div class="p-6 ">
+                        <h3 class="text-lg font-semibold text-gray-900">{{ item.name }}</h3>
+                    <p class="mt-1 text-sm text-gray-600">{{ item.item_name }}</p>
+                    <p class="mt-2 text-sm font-medium text-indigo-600">₹{{ item.standard_rate }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
