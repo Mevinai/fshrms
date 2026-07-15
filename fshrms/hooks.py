@@ -51,6 +51,11 @@ fixtures = [
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
+
+doctype_js = {
+    "Sales Invoice": "public/js/sales_invoice.js"
+}
+
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
@@ -152,12 +157,6 @@ fixtures = [
 # 	}
 # }
 
-doc_events = {
-    "Salary Slip": {
-        "validate": "fshrms.overrides.salary_slip.fdre_salary_calculation"
-    }
-}
-
 
 # Scheduled Tasks
 # ---------------
@@ -179,6 +178,25 @@ doc_events = {
 # 		"fshrms.tasks.monthly"
 # 	],
 # }
+
+
+# scheduler_events = {
+#     "hourly": [
+#         "fshrms.api.invoice_report.scheduled_customer_invoice_report"
+#     ]
+# }
+
+scheduler_events = {
+    "cron": {
+        "*/1 * * * *": [
+            "fshrms.api.invoice_report.scheduled_customer_invoice_report"
+        ]
+    }
+}
+
+
+
+
 
 # Testing
 # -------
