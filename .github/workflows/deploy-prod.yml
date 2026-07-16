@@ -27,7 +27,7 @@ jobs:
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
             set -e
             echo "▶ Moving to deployment directory"
-            cd /home/erp
+            cd /home/bootcamp/frappe-docker
             echo "▶ Cleaning Docker system"
             docker system prune -f
             echo "▶ Rebuilding and starting containers"
