@@ -29,7 +29,7 @@ jobs:
             echo "Moving to deployment directory"
             cd /home/bootcamp/frappe-docker
             echo "Cleaning Docker system"
-            docker system prune -a -f
+            docker system prune -f
             echo "Rebuilding and starting containers"
             docker compose build --build-arg BUILDKIT_INLINE_CACHE=1 --parallel
             docker compose down
