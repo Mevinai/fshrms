@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-07-06 10:13:53.735366",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_67py",
+  "naming_series",
+  "project",
+  "report_date",
+  "column_break_hdji",
+  "workers_on_site",
+  "progress_percentage",
+  "site_engineer",
+  "section_break_yozj",
+  "manager",
+  "column_break_xmaq",
+  "chat_id",
+  "section_break_opwj",
+  "attachment",
+  "section_break_qxcz",
+  "work_done_descrion",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_67py",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Site Progress Report",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "SPR-.YYYY.-"
+  },
+  {
+   "fieldname": "column_break_hdji",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fieldname": "site_engineer",
+   "fieldtype": "Link",
+   "label": "Site Engineer",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "progress_percentage",
+   "fieldtype": "Float",
+   "label": "Progress Percentage"
+  },
+  {
+   "fieldname": "workers_on_site",
+   "fieldtype": "Int",
+   "label": "Workers on Site"
+  },
+  {
+   "fieldname": "section_break_opwj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "section_break_qxcz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "work_done_descrion",
+   "fieldtype": "Text Editor",
+   "label": "Work Done Descrion"
+  },
+  {
+   "fieldname": "section_break_yozj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "manager",
+   "fieldtype": "Link",
+   "label": "Manager",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_xmaq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "chat_id",
+   "fieldtype": "Password",
+   "label": "Telegram Chat ID"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-07-06 10:48:22.939017",
+ "modified_by": "Administrator",
+ "module": "Fshrms",
+ "name": "Site Progress Report",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
